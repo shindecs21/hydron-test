@@ -31,5 +31,12 @@ module.exports = {
         hot: true,
         static: path.resolve(__dirname, "dist"),
         watchFiles: ['src/**/*.html', 'public/**/*'],
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+                runtimeErrors: true,
+            },
+        },
     }
 }
