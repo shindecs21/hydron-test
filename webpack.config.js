@@ -1,5 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
+
 
 module.exports = {
     mode: 'development',
@@ -13,7 +15,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss)$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['css-loader', 'sass-loader']
             },
             {
                 test: /\.(jpg|png|svg|jpeg)$/,
@@ -22,9 +24,20 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
+        /* new HtmlWebpackPlugin({
             template: 'src/index.html'
-        })
+        }) */
+        new HtmlBundlerPlugin({
+            entry: {
+                index: 'src/index.html',    // define templates here
+            },
+            js: {
+                filename: 'js/[name].[contenthash:8].js',   // output filename of compiled JavaScript
+            },
+            css: {
+                filename: 'css/[name].[contenthash:8].css',  // output filename of extracted CSS
+            },
+        }),
     ],
     devServer: {
         open: true,
