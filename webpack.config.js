@@ -5,9 +5,10 @@ const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/index.js',
+    entry: './src/js/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
         filename: 'main.js'
     },
     devtool: 'source-map',
@@ -43,7 +44,7 @@ module.exports = {
         open: true,
         hot: true,
         static: path.resolve(__dirname, "dist"),
-        watchFiles: ['src/**/*.html', 'public/**/*'],
+        watchFiles: ['src/**/*.*'],
         client: {
             overlay: {
                 errors: true,
