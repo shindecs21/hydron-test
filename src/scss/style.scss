@@ -1,6 +1,64 @@
 $primary: #ea70fa;
-$danger:rgb(255, 110, 26);
+$danger: rgb(255, 110, 26);
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+#logo {
+    height: 2em;
+}
+
+.bottom-arrow {
+    padding: .5em;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 1rem;
+}
+
+section {
+    background-color: #690d75;
+    color: azure;
+    height: 55rem;
+    position: relative;
+
+}
+
+.profile {
+    margin: auto;
+    min-width: 25rem;
+    max-width: 28rem;
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    /* position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%); */
+}
+
+.personal {
+    background-color: #522f57;
+}
+
+.lblpro {
+    position: relative;
+    top: 1.3rem;
+    left: 1.1rem;
+    background-color: $warning;
+    padding: .5rem 1rem;
+    color: #070c01;
+}
+
+.proflogo {
+    display: block;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.skills {
+    background-color: #3a233d;
+}
 
 
 
