@@ -1,24 +1,38 @@
 $primary: #ea70fa;
+$secondary: rgb(94 192 205);
 $danger: rgb(255, 110, 26);
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+$font-family-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/";
 
-#logo {
-  height: 2em;
-}
+/* $fa-font-path: "../webfonts"; */
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
-.bottom-arrow {
+/* .bottom-arrow {
   padding: 0.5em;
   background-color: cadetblue;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   border-radius: 1rem;
+} */
+
+#logo {
+  height: 5rem;
 }
 
 section {
-  background-color: #690d75;
-  color: azure;
+  /*  color: azure;
   height: 55rem;
+  background-color: #690d75; */
+
   position: relative;
 }
 
@@ -35,16 +49,16 @@ section {
 }
 
 .personal {
-  background-color: #522f57;
+  background-color: #c9a11f;
 }
 
 .lblpro {
   position: relative;
   top: 1.3rem;
   left: 1.1rem;
-  background-color: $warning;
+  background-color: #b7d9ff;
   padding: 0.5rem 1rem;
-  color: #070c01;
+  color: #538f0a;
 }
 
 .proflogo {
@@ -54,7 +68,7 @@ section {
 }
 
 .skills {
-  background-color: #3a233d;
+  background-color: #6bc851;
 }
 
 /* @import "../../node_modules/bootstrap/scss/functions";

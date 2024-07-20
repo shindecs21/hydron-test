@@ -10,7 +10,7 @@ module.exports = {
     clean: true,
     filename: "main.js",
   },
-  devtool: "source-map",
+  /* devtool: "source-map", */
   module: {
     rules: [
       {
