@@ -11,10 +11,10 @@
     <script src="./js/main.js" defer="defer"></script>
   </head>
 
-  <body style="background-image: linear-gradient(to top, #fddb9238 0%, #d1fdff 100%)">
-    <nav class="navbar navbar-expand-lg sticky-top p-0 shadow-sm" style="background-color: rgba(255, 255, 255, 0.938)">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img id="logo" class="" src="./assets/hydron_logo.png" alt="NavLogo" /></a>
+  <body style="background: linear-gradient(130deg, #00c9ff5c 0%, #ffaa103b 100%)">
+    <nav class="navbar navbar-expand-sm sticky-top p-0 shadow-sm mb-5">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#"> <img id="logo" style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -26,32 +26,35 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Hydron Products</a>
-            <a class="nav-link" href="#">Jivala Masale</a>
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown link </a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Hydron Products</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Jivala Masale</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Contact Us</a></li>
+            <!-- <div class="nav-item dropdown">
+              <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </div>
-          </div>
+            </div> -->
+          </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-xl mx-auto">
-      <div class="display-5 my-3 text-center text-primary">Hydron Healthcare Private Ltd.</div>
-      <h4 class="display-7 my-3 text-center text-primary-emphasis">Touching Every Aspect of Health.</h4>
+    <div class="container-xl mt-5">
+      <div class="display-5 my-3 text-center text-info-emphasis fw-bold">Hydron Healthcare Pvt. Ltd.</div>
+      <h4 class="display-7 my-3 text-center text-muted" style="font-family: Poppins">Touching Every Aspect of Health.</h4>
 
       <div class="row mt-3 g-4">
         <div class="col-sm-6 col-md-4">
           <div class="card shadow">
-            <img class="card-img-top" src="https://picsum.photos/200" />
-            <div class="card-body" style="background: linear-gradient(139deg, rgba(186, 215, 0, 0.247) 0%, rgba(94, 192, 205, 0.384) 100%)">
+            <img class="card-img-top" src="./assets/sample_med.jpg" />
+            <div class="card-body" style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)">
               <h5 class="card-title">Gabadron-Plus</h5>
               <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
               <p class="card-text text-body-secondary small">
@@ -62,7 +65,7 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="card shadow">
-            <img class="card-img-top" src="https://picsum.photos/200" />
+            <img class="card-img-top" src="./assets/sample_med.jpg" />
             <div class="card-body" style="background: linear-gradient(139deg, rgba(186, 215, 0, 0.247) 0%, rgba(94, 192, 205, 0.384) 100%)">
               <h5 class="card-title">Gabadron-Plus</h5>
               <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
@@ -75,7 +78,7 @@
 
         <div class="col-sm-6 col-md-4">
           <div class="card shadow text-bg-light">
-            <img class="card-img-top" src="https://picsum.photos/200" />
+            <img class="card-img-top" src="./assets/sample_med.jpg" />
             <div class="card-body">
               <h5 class="card-title">Gabadron-Plus</h5>
               <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
@@ -88,7 +91,7 @@
 
         <div class="col-sm-6 col-md-4">
           <div class="card shadow text-bg-success">
-            <img class="card-img-top" src="https://picsum.photos/200" />
+            <img class="card-img-top" src="./assets/sample_med.jpg" />
             <div class="card-body">
               <h5 class="card-title">Gabadron-Plus</h5>
               <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
@@ -101,135 +104,46 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-body-secondary shadow pt-3">
-      <div class="row g-4">
-        <div class="col-sm-4">
-          <img style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" />
-          <div class="ms-3">
-            <span>Connect with us</span>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-facebook text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-twitter text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-youtube text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-instagram text-dark-emphasis fs-1"></i></a>
-              </li>
-            </ul>
+    <div class="container-fluid bg-secondary text-light shadow py-5 mt-5 mt-md-7">
+      <div class="container-xl">
+        <div class="row gy-3 py-2">
+          <div class="col-sm-4">
+            <!--  <img style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" /> -->
+            <div class="ms-3">
+              <p>Connect with us</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href=""><i class="fa-brands fa-square-facebook fs-1 link-dark"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href=""><i class="fa-brands fa-square-twitter fs-1 link-dark"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href=""><i class="fa-brands fa-square-youtube fs-1 link-dark"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href=""><i class="fa-brands fa-square-instagram fs-1 link-dark"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <h5 class="text-muted">Quick Links</h5>
-          <div class="ps-1"><a href="">Home</a></div>
-          <div class="ps-1"><a href="">Products</a></div>
-          <div class="ps-1"><a href="">Spices</a></div>
-          <div class="ps-1"><a href="">Contact Us</a></div>
-        </div>
-        <div class="col-sm-5 vstack align-self-end mb-5">
-          <div>Copyrights 2024 @ Hydron Healthcare Pvt. Ltd.</div>
-          <div>All rights reserved</div>
+          <div class="col-sm-3">
+            <h5 class="text-light opacity-75">Quick Links</h5>
+            <div class="ps-1"><a class="link-dark fw-semibold" href="">Home</a></div>
+            <div class="ps-1"><a class="link-dark fw-semibold" href="">Products</a></div>
+            <div class="ps-1"><a class="link-dark fw-semibold" href="">Spices</a></div>
+            <div class="ps-1"><a class="link-dark fw-semibold" href="">Contact Us</a></div>
+          </div>
+          <div class="col-sm-5 vstack align-self-end mb-5">
+            <div>Copyrights 2024 @ Hydron Healthcare Pvt. Ltd.</div>
+            <div>All rights reserved.</div>
+          </div>
         </div>
       </div>
     </div>
 
-<<<<<<< HEAD
-    <div class="fixed-bottom text-end p-4">
-      <span class="text-bg-success rounded-3 p-2">Top <i class="bi bi-arrow-up-circle ms-1"></i></span>
-=======
-    <section class="my-5">
-      <div class="profile pt-5">
-        <div class="personal">
-          <span class="lblpro">PRO</span>
-          <img class="proflogo mx-auto mb-3" src="./assets/hydron_logo.png" alt="my logo" />
-
-          <h2 class="text-center">Chetan Shinde</h2>
-          <h6 class="text-center">India</h6>
-          <h5 class="text-center pt-2">Html Web Developer</h5>
-          <div class="text-center py-4">
-            <button type="button" class="btn btn-lg btn-info me-1">Message</button>
-            <button type="button" class="btn btn-lg btn-info ms-1">Follow</button>
-          </div>
-        </div>
-        <div class="skills">
-          <ul>
-            <li>Pythin</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Java</li>
-            <li>Eng</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="container-fluid bg-body-secondary shadow pt-3">
-      <div class="row g-4">
-        <div class="col-sm-4">
-          <img style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" />
-          <div class="ms-3">
-            <span>Connect with us</span>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-facebook text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-twitter text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-youtube text-dark-emphasis fs-1"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href=""><i class="fa-brands fa-square-instagram text-dark-emphasis fs-1"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <h5 class="text-muted">Quick Links</h5>
-          <div class="ps-1"><a href="">Home</a></div>
-          <div class="ps-1"><a href="">Products</a></div>
-          <div class="ps-1"><a href="">Spices</a></div>
-          <div class="ps-1"><a href="">Contact Us</a></div>
-        </div>
-        <div class="col-sm-5 vstack align-self-end mb-5">
-          <div>Copyrights 2024 @ Hydron Healthcare Pvt. Ltd.</div>
-          <div>All rights reserved</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fixed-bottom text-end p-4">
-      <span class="text-bg-success rounded-3 p-2">Top <i class="bi bi-arrow-up-circle ms-1"></i></span>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis exercitationem asperiores repellendus pariatur. Quos et autem
-              consequuntur? Exercitationem optio autem cumque praesentium officia numquam iusto possimus aliquam. Expedita, aperiam voluptatum?
-            </h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
->>>>>>> 76d6b8df2cf999712b5549ec7df9863a6c504f59
+    <div class="fixed-bottom text-end mb-3 me-3">
+      <p><i class="fa fa-arrow-up text-bg-success rounded-3 p-3 shadow"></i></p>
     </div>
   </body>
 </html>
