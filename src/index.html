@@ -12,41 +12,9 @@
   </head>
 
   <body style="background: linear-gradient(130deg, #00c9ff5c 0%, #ffaa103b 100%)">
-    <nav class="navbar navbar-expand-sm sticky-top p-0 shadow-sm mb-5">
-      <div class="container-xl">
-        <a class="navbar-brand" href="#"> <img id="logo" style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Hydron Products</a></li>
-            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Jivala Masale</a></li>
-            <li class="nav-item"><a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="#">Contact Us</a></li>
-            <!-- <div class="nav-item dropdown">
-              <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <%~ include('/src/navbar.html') %>
 
-    <div class="container-xl mt-5">
+    <div class="container-xl my-5">
       <div class="display-5 my-3 text-center text-info-emphasis fw-bold">Hydron Healthcare Pvt. Ltd.</div>
       <h4 class="display-7 my-3 text-center text-muted" style="font-family: Poppins">Touching Every Aspect of Health.</h4>
 
@@ -104,46 +72,10 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-secondary text-light shadow py-5 mt-5 mt-md-7">
-      <div class="container-xl">
-        <div class="row gy-3 py-2">
-          <div class="col-sm-4">
-            <!--  <img style="height: 5rem" src="./assets/hydron_logo.png" alt="Hydron" /> -->
-            <div class="ms-3">
-              <p>Connect with us</p>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href=""><i class="fa-brands fa-square-facebook fs-1 link-dark"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href=""><i class="fa-brands fa-square-twitter fs-1 link-dark"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href=""><i class="fa-brands fa-square-youtube fs-1 link-dark"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href=""><i class="fa-brands fa-square-instagram fs-1 link-dark"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <h5 class="text-light opacity-75">Quick Links</h5>
-            <div class="ps-1"><a class="link-dark fw-semibold" href="">Home</a></div>
-            <div class="ps-1"><a class="link-dark fw-semibold" href="">Products</a></div>
-            <div class="ps-1"><a class="link-dark fw-semibold" href="">Spices</a></div>
-            <div class="ps-1"><a class="link-dark fw-semibold" href="">Contact Us</a></div>
-          </div>
-          <div class="col-sm-5 vstack align-self-end mb-5">
-            <div>Copyrights 2024 @ Hydron Healthcare Pvt. Ltd.</div>
-            <div>All rights reserved.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="fixed-bottom text-end mb-3 me-3">
       <p><i class="fa fa-arrow-up text-bg-success rounded-3 p-3 shadow"></i></p>
     </div>
+
+    <%~ include('/src/footer.html') %>
   </body>
 </html>

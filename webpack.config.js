@@ -28,9 +28,7 @@ module.exports = {
             template: 'src/index.html'
         }) */
     new HtmlBundlerPlugin({
-      entry: {
-        index: "src/index.html", // define templates here
-      },
+      entry: "src/",
       js: {
         filename: "js/[name].[contenthash:8].js", // output filename of compiled JavaScript
       },

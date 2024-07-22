@@ -13,6 +13,10 @@ const navBar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   console.log("adddding even tlisrtner!!!!!!!!!" + window.scrollY);
-  if (window.scrollY > 30) navBar.classList.add("sticky-nav");
+  const orig = window.scrollY;
+  if (window.scrollY >= 70) navBar.classList.add("sticky-nav");
   else navBar.classList.remove("sticky-nav");
 });
+
+/* import navHtml from "../navbar.html?render&buttonText=Star";
+document.getElementById("navPlaceHolder").innerHTML = navHtml; */

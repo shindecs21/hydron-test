@@ -10,6 +10,8 @@ $spacers: (
   7: $spacer * 8,
   8: $spacer * 10,
 );
+$line-height-base: 1.7;
+$link-shade-percentage: 40%;
 
 /* $primary: #ffc107; */
 $secondary: #3baeba;
@@ -18,9 +20,9 @@ $dark: #1a485e;
 $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
 
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+ */
 $font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
   "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -42,13 +44,17 @@ nav.navbar {
 }
 
 .sticky-nav {
-  background-color: $white;
-  opacity: 0.99;
+  background-color: $secondary;
+  opacity: 0.95;
   a {
-    padding: 0;
+    padding: 0 auto !important;
+  }
+  a:hover {
+    background-color: $light !important;
   }
   img {
-    height: 4rem !important;
+    padding: 0 !important;
+    height: 3rem !important;
   }
 }
 
@@ -58,4 +64,10 @@ nav.navbar {
 
 .card:hover {
   transform: scale(1.04);
+}
+
+a:hover {
+  text-shadow: 0px 0px 4px rgba($light, 0.4);
+  letter-spacing: 0.7px;
+  transition: all 0.2s ease-in-out;
 }
