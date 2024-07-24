@@ -3,43 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Starter!</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-
+    <title>Contact Us : Hydron Healthcare Pvt. Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <script src="./js/main.js" defer="defer"></script>
   </head>
 
-  <body style="background: linear-gradient(130deg, #00c9ff5c 0%, #ffaa103b 100%)">
+  <body class="body">
     <%~ include('/src/navbar.html') %>
 
-    <div class="container-xl mt-5">
+    <div class="container-xl mt-8">
       <h4 class="display-6 my-3 text-center text-muted fw-normal">Contact Us</h4>
-      <h4 class="display-6z text-center text-light-emphasis fw-normal">Any query related to product, service, order or delivery?</h4>
-      <h4 class="display-6z mb-5 text-center text-light-emphasis fw-normal">Get in touch with us, and we will get back to you!</h4>
+
+      <p class="lead text-center text-light-emphasis w-75 m-auto">Any query related to product, service, order or delivery?</p>
+      <p class="lead text-center text-light-emphasis w-75 m-auto mb-4">Get in touch with us, and we will get back to you!</p>
+      <!-- <h4 class="text-center text-light-emphasis fw-normal"></h4> -->
 
       <div class="row">
-        <div class="col-sm-10 offset-sm-1">
+        <div class="col-md-10 offset-md-1">
           <form action="">
-            <div class="mb-3">
-              <input type="text" class="form-control form-control-lg" name="name" placeholder="Name" />
+            <div class="mb-3 input-group">
+              <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+              <input type="text" class="form-control form-control-lg" name="name" placeholder="Full Name" />
             </div>
 
-            <div class="mb-3">
-              <input type="phone" class="form-control form-control-lg" name="mobile" placeholder="Mobile" />
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="mb-3 input-group">
+                  <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                  <input type="phone" class="form-control form-control-lg" name="mobile" placeholder="Mobile" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mb-3 input-group">
+                  <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                  <input type="email" class="form-control form-control-lg" name="email" placeholder="Email" />
+                </div>
+              </div>
             </div>
 
-            <div class="mb-3">
-              <input type="email" class="form-control form-control-lg" name="email" placeholder="Email" />
+            <div class="mb-3 input-group">
+              <span class="input-group-text"> <i class="fa fa-list"></i> </span>
+              <select class="form-select form-select-lg" placeholder="Email">
+                <option>Select service</option>
+                <option value="1">Hydron</option>
+                <option value="2">Jivala Masale</option>
+                <option value="3">Other</option>
+              </select>
             </div>
 
-            <div class="mb-3">
-              <textarea class="form-control form-control-lg" name="message" rows="6" placeholder="Message"></textarea>
+            <div class="mb-3 input-group">
+              <textarea class="form-control form-control-lg" name="message" rows="4" placeholder="Message"></textarea>
             </div>
 
-            <div class="d-grid">
-              <button type="submit" class="btn btn-dark text-white mt-3">Submit</button>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-lg btn-dark text-white mt-3 rounded-pill px-sm-6">Send Your Message</button>
             </div>
           </form>
         </div>
