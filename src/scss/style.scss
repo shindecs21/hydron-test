@@ -20,15 +20,22 @@ $dark: #1a485e;
 
 $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
  */
 $font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
   "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap-icons/";
+
+@import "../../node_modules/animate.css/animate.min.css";
+:root {
+  --animate-duration: 1200ms;
+  /* --animate-delay: 0.9s; */
+}
 
 /* $fa-font-path: "../webfonts"; */
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -96,6 +103,8 @@ nav.navbar {
 }
 
 .card {
+  /* animation: fadeInUp;
+  animation-duration: 2s; */
   transition: transform 0.3s ease-in-out;
 }
 .card:hover {
