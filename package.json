@@ -1,5 +1,5 @@
 {
-  "name": "webpackwithbs",
+  "name": "hydron-test",
   "version": "1.0.0",
   "description": "bootstrap starter with webpack",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shindecs21/webpackWithBS.git"
+    "url": "git+https://github.com/shindecs21/hydron-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shindecs21/webpackWithBS/issues"
+    "url": "https://github.com/shindecs21/hydron-test/issues"
   },
-  "homepage": "https://github.com/shindecs21/webpackWithBS#readme",
+  "homepage": "https://shindecs21.github.io/hydron-test",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "css-loader": "^7.1.2",
