@@ -17,16 +17,13 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  /*   scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
-  }, */
+  /*   scrollbar: {     el: ".swiper-scrollbar",     draggable: true,  }, */
   slideToClickedSlide: true,
   speed: 700,
-  /*autoplay: {
+  autoplay: {
     delay: 4000,
     pauseOnMouseEnter: true,
-  }, */
+  },
   grabCursor: true,
   effect: "creative",
   creativeEffect: {
@@ -44,9 +41,20 @@ console.log(" startted my firs js line !!!!!!!!");
 console.log(" test getUID" + bsUtil.getUID("2ss"));
 
 const navBar = document.querySelector(".navbar");
+let goUpBtn = document.getElementById("btn-back-to-top");
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 70) navBar.classList.add("sticky-nav");
-  else navBar.classList.remove("sticky-nav");
+  //if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+  if (window.scrollY >= 70) {
+    navBar.classList.add("sticky-nav");
+    goUpBtn.style.display = "block";
+  } else {
+    navBar.classList.remove("sticky-nav");
+    goUpBtn.style.display = "none";
+  }
+});
+
+goUpBtn.addEventListener("click", () => {
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
 });
 
 /* import navHtml from "../navbar.html?render&buttonText=Star";
