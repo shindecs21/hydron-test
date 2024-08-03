@@ -4,6 +4,8 @@ import "../scss/style.scss";
 import * as bootstrap from "../../node_modules/bootstrap"; // Import all of Bootstrap's JS
 import bsUtil from "../../node_modules/bootstrap/js/dist/util/index.js";
 
+const fslight = require("fslightbox");
+
 const WOW = require("wow.js");
 new WOW({ live: false, animateClass: "animate__animated" }).init();
 
@@ -32,7 +34,7 @@ const swiper = new Swiper(".swiper", {
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: ["-20%", 0, -1],
+      translate: ["-30%", 0, -1],
     },
     next: {
       translate: ["100%", 0, 0],

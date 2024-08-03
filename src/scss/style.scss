@@ -10,6 +10,7 @@ $spacers: (
   7: $spacer * 8,
   8: $spacer * 10,
 );
+$enable-negative-margins: true;
 $line-height-base: 1.7;
 $input-btn-line-height: 1.5;
 $link-shade-percentage: 40%;
@@ -69,12 +70,13 @@ nav.navbar {
   }
 }
 
-.header-wh {
+.header-prod {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, rgba(6, 59, 75, 0.915), rgba(2, 124, 100, 0.898)),
-    url("../assets/header-bg_.jpg") center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(212, 249, 253, 0.911), rgba(237, 253, 251, 0.959)),
+    url("../assets/product-bg.svg") center center no-repeat;
   background-size: cover;
-  color: rgb(255, 255, 255) !important;
+  background-attachment: fixed;
+  color: rgb(41, 0, 39) !important;
   h1 {
     text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
   }
@@ -87,19 +89,23 @@ nav.navbar {
 }
 
 .header-spices {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)), url("../assets/spices.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: rgb(255, 255, 255) !important;
   h1 {
     text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
   }
+  .features .card {
+    backdrop-filter: blur(10px);
+  }
 }
 .header {
-  min-height: 100vh;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.08)),
     url("../assets/header-bg.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: rgb(2 8 78) !important;
   p,
   h1,
@@ -107,7 +113,6 @@ nav.navbar {
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
   }
   .features li {
-    background-color: #258596;
     background-image: linear-gradient(225deg, #258596 0%, #8159a0 50%, #2b86c5 100%);
   }
 }
