@@ -29,19 +29,19 @@ $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
 $font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
   "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
-@import "../../node_modules/animate.css/animate.min.css";
+@import "animate.css/animate.min.css";
 :root {
   --animate-duration: 1200ms;
   /* --animate-delay: 0.9s; */
 }
 
 /* $fa-font-path: "../webfonts"; */
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
 
 html {
   scroll-behavior: smooth;

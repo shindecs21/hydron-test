@@ -1,8 +1,8 @@
 // Import our custom CSS
 import "../scss/style.scss";
 
-import * as bootstrap from "../../node_modules/bootstrap"; // Import all of Bootstrap's JS
-import bsUtil from "../../node_modules/bootstrap/js/dist/util/index.js";
+import * as bootstrap from "bootstrap"; // Import all of Bootstrap's JS
+import bsUtil from "bootstrap/js/dist/util/index.js";
 
 const fslight = require("fslightbox");
 
